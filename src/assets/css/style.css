@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* reset marginesów i dopełnień */
+html, body, ul, li { margin: 0; padding: 0; }
+
+/* reset wysokości linii i fontu */
+h1, h2, h3, h4, ul, li, ol, p { margin:0; padding:0; font-size: 1em;
+line-height: 1.6em; }
+
+/* ustawienia ogólne */
+body { background: #ffffff;
+font: 0.825em/1.5em arial, tahoma, verdana, sans-serif; }
+
+/* szerokość strony */
+.content { width: 980px; margin: 0 auto; overflow: hidden; }
+
+
+header { background: white; width:100%; height: 30px; }
+header p {font: 16px Arial, sans-serif; color: black; text-align: center; margin-top: 10px;}
+section { background: green; width:100%; height: 300px; float: left; text-align: center; padding-top: 20px; }
+section form input[type=text] {width: 60px; height:20px; font-size: 20px; }
+section form select {width: 60px; height:30px; font-size: 20px; color: green;}
+section form input[type=submit] {width: 60px; height:30px; font-size: 20px; background-color: #B0ECC8; color: green;}
+/*aside { background: orange; width:30%; height: 100px; float: right; }*/
+footer { background: white; width:100%; height: 30px; clear: both; }
+footer p { font: 12px Arial, sans-serif; color: black; text-align: center; padding-top: 10px;}
