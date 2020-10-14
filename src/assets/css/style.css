@@ -35,6 +35,7 @@ input {
   height: 5vh;
   text-align: center;
   color: gray;
+  font-size: 18px;
 }
 input:hover {
   color: black;

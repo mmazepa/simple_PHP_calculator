@@ -12,7 +12,7 @@
     </div>
     <div class="main">
       <form method="POST" action="index.php">
-        <input type="text" name="liczba1" size="10" value="<php echo @liczba1 ?>">
+        <input type="text" name="liczba1" size="10" value="<?php echo $_POST["liczba1"] ?>" required>
         <select name="znak">
           <option disabled="disabled">zdecyduj...</option>
           <option selected value="+ (plus)">+ (plus)</option>
@@ -21,7 +21,7 @@
           <option value="/ (podzielić przez)">/ (podzielić przez)</option>
           <option value="√ (pierwiastek stopnia)">√ (pierwiastek stopnia)</option>
         </select>
-        <input type="text" name="liczba2" size="10" value="<php echo @liczba2 ?>"><br>
+        <input type="text" name="liczba2" size="10" value="<?php echo $_POST["liczba2"] ?>" required>
         <input type="submit" value="Oblicz">
         <output name="wynik" for="liczba1 liczba2"></output>
       </form>
@@ -31,9 +31,9 @@
         </span>
         <span class="result">
           <?php
-            $liczba1=$_POST['liczba1'];
-            $liczba2=$_POST['liczba2'];
-            $znak=$_POST['znak'];
+            $liczba1=$_POST["liczba1"];
+            $liczba2=$_POST["liczba2"];
+            $znak=$_POST["znak"];
             $wynik="";
             switch($znak) {
              case "+ (plus)":
