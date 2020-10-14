@@ -4,6 +4,7 @@
   	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
   	<title>Prosty kalkulator w PHP</title>
   	<link type="text/css" href="assets/css/style.css" rel="stylesheet"></link>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
   </head>
   <body>
     <div class="header">
