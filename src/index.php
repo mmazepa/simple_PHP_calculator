@@ -24,7 +24,11 @@
     </div>
     <div class="main">
       <form method="POST" action="index.php">
-        <input type="number" name="liczba1" size="10" value="<?php echo $_POST["liczba1"] ?>" required>
+        <input  type="number"
+                name="liczba1"
+                size="10"
+                value="<?php if(isset($_POST["liczba1"])){ echo $_POST["liczba1"]; } ?>"
+                required>
         <?php
           (isset($_POST["znak"])) ? $znak = $_POST["znak"] : $znak=$signs[0];
         ?>
@@ -61,7 +65,11 @@
               <?php echo $signs[5] ?>
             </option>
         </select>
-        <input type="number" name="liczba2" size="10" value="<?php echo $_POST["liczba2"] ?>" required>
+        <input  type="number"
+                name="liczba2"
+                size="10"
+                value="<?php if(isset($_POST["liczba2"])) { echo $_POST["liczba2"]; } ?>"
+                required>
         <input type="submit" value="Oblicz">
         <output name="wynik" for="liczba1 liczba2"></output>
       </form>
@@ -71,10 +79,9 @@
         </span>
         <span class="result">
           <?php
-            $liczba1=$_POST["liczba1"];
-            $liczba2=$_POST["liczba2"];
-
-            $znak=$_POST["znak"];
+            isset($_POST["liczba1"]) ? $liczba1=$_POST["liczba1"] : $liczba1=0;
+            isset($_POST["liczba2"]) ? $liczba2=$_POST["liczba2"] : $liczba2=0;
+            isset($_POST["znak"]) ? $znak=$_POST["znak"] : $znak=$signs[0];;
             $wynik="";
 
             switch($znak) {
