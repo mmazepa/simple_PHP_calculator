@@ -7,18 +7,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
   </head>
   <body>
-    <?php
-      $title = "Prosty kalkulator";
-      $signs = [
-        "+ (plus)",
-        "- (minus)",
-        "* (razy)",
-        "/ (podzielić przez)",
-        "^ (do potęgi)",
-        "√ (pierwiastek stopnia)"
-      ];
-      $resultLabel = "Twój wynik to:";
-    ?>
+    <?php require "partials/variables.php"; ?>
     <div class="header">
       <h1><?php echo $title ?></h1>
     </div>
@@ -78,35 +67,7 @@
           <?php echo $resultLabel ?>
         </span>
         <span class="result">
-          <?php
-            isset($_POST["liczba1"]) ? $liczba1=$_POST["liczba1"] : $liczba1=0;
-            isset($_POST["liczba2"]) ? $liczba2=$_POST["liczba2"] : $liczba2=0;
-            isset($_POST["znak"]) ? $znak=$_POST["znak"] : $znak=$signs[0];;
-            $wynik="";
-
-            switch($znak) {
-             case $signs[0]:
-               $wynik=$liczba1+$liczba2;
-               break;
-             case $signs[1]:
-               $wynik=$liczba1-$liczba2;
-               break;
-             case $signs[2]:
-               $wynik=$liczba1*$liczba2;
-               break;
-             case $signs[3]:
-               $wynik=$liczba1/$liczba2;
-               break;
-             case $signs[4]:
-               $wynik=pow($liczba1,$liczba2);
-               break;
-             case $signs[5]:
-               $wynik=pow($liczba1,1/$liczba2);
-               break;
-            }
-
-            echo $wynik;
-          ?>
+          <?php require "partials/calculator.php"; ?>
         </span>
       </p>
     </div>
