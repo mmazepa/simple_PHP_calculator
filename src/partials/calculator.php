@@ -1,7 +1,7 @@
 <?php
   isset($_POST["liczba1"]) ? $liczba1=$_POST["liczba1"] : $liczba1=0;
   isset($_POST["liczba2"]) ? $liczba2=$_POST["liczba2"] : $liczba2=0;
-  isset($_POST["znak"]) ? $znak=$_POST["znak"] : $znak=$signs[0];;
+  isset($_POST["znak"]) ? $znak=$_POST["znak"] : $znak=$signs[0];
   $wynik="";
 
   switch($znak) {

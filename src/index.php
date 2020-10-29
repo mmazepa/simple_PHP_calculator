@@ -24,36 +24,17 @@
         ?>
         <select name="znak">
           <option disabled="disabled">zdecyduj...</option>
-          <option
-            <?php if($znak==$signs[0]) echo "selected" ?>
-            value="<?php echo $signs[0] ?>">
-              <?php echo $signs[0] ?>
+          <?php
+            for ($i = 0; $i < count($signs); $i++) {
+          ?>
+            <option
+            <?php if($znak==$signs[$i]) echo "selected" ?>
+              value="<?php echo $signs[$i] ?>">
+                <?php echo $signs[$i] ?>
             </option>
-          <option
-            <?php if($znak==$signs[1]) echo "selected" ?>
-            value="<?php echo $signs[1] ?>">
-              <?php echo $signs[1] ?>
-            </option>
-          <option
-            <?php if($znak==$signs[2]) echo "selected" ?>
-            value="<?php echo $signs[2] ?>">
-              <?php echo $signs[2] ?>
-            </option>
-          <option
-            <?php if($znak==$signs[3]) echo "selected" ?>
-            value="<?php echo $signs[3] ?>">
-              <?php echo $signs[3] ?>
-            </option>
-          <option
-            <?php if($znak==$signs[4]) echo "selected" ?>
-            value="<?php echo $signs[4] ?>">
-              <?php echo $signs[4] ?>
-            </option>
-          <option
-            <?php if($znak==$signs[5]) echo "selected" ?>
-            value="<?php echo $signs[5] ?>">
-              <?php echo $signs[5] ?>
-            </option>
+          <?php
+            }
+          ?>
         </select>
         <input  type="number"
                 name="liczba2"
