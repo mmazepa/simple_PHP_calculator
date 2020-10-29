@@ -17,6 +17,7 @@
                 name="liczba1"
                 size="10"
                 value="<?php if(isset($_POST["liczba1"])){ echo $_POST["liczba1"]; } ?>"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                 required>
         <?php
           (isset($_POST["znak"])) ? $znak = $_POST["znak"] : $znak=$signs[0];
@@ -58,6 +59,7 @@
                 name="liczba2"
                 size="10"
                 value="<?php if(isset($_POST["liczba2"])) { echo $_POST["liczba2"]; } ?>"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                 required>
         <input type="submit" value="Oblicz">
         <output name="wynik" for="liczba1 liczba2"></output>
