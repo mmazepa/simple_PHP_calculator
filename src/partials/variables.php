@@ -1,12 +1,12 @@
 <?php
-  $title = "Prosty kalkulator";
+  $title = "Simple Calculator";
   $signs = [
     "+ (plus)",
     "- (minus)",
-    "* (razy)",
-    "/ (podzielić przez)",
-    "^ (do potęgi)",
-    "√ (pierwiastek stopnia)"
+    "* (times)",
+    "/ (divide by)",
+    "^ (to the power of)",
+    "√ (radical)"
   ];
-  $resultLabel = "Twój wynik to:";
+  $resultLabel = "Your result is:";
 ?>
