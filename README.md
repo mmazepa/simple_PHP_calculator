@@ -32,4 +32,4 @@ $ cd simple_PHP_calculator
 $ php -S localhost:8080
 ```
 
-and then type `localhost:8080/src/index.php` in your browser.
+and then go to [localhost:8080/src/index.php](https://localhost:8080/src/index.php "Simple PHP Calculator Homepage") in your browser.
