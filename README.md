@@ -2,7 +2,7 @@
 
 ![HTML5](https://img.shields.io/badge/HTML-HTML5-blue)
 ![CSS](https://img.shields.io/badge/CSS-CSS3+Less-blue)
-![PHP](https://img.shields.io/badge/PHP-7.0.33-blue)
+![PHP](https://img.shields.io/badge/PHP-7.2.24-blue)
 
 ## Table of contents
 * [General info](#general-info)
